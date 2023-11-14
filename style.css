@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5rem;
+}
+
+/* nav */
+section{
+    padding:3% 7%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 1.5rem 7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav-left img{
+    height: 3rem;
+}
+.nav-mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-mid a{
+    margin:0 1rem;
+    font-size: 1.1rem;
+    color: black;
+}
+.nav-mid .active{
+    font-weight: 800;
+}
+.nav-right .btn{
+    background: rgb(255, 109, 56);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    color: white;
+}
+
+/* home */
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+}
+.home .content{
+    max-width: 30rem;
+
+}
+.heading h1{
+    font-size: 3.8rem;
+    color: rgb(65, 65, 65);
+}
+.heading p{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 4r00;
+    color: rgb(65, 65, 65);
+    letter-spacing: .1rem;
+}
+.button{
+    padding-top: 50px;
+}
+.button .btn1{
+    padding: 13px 30px;
+    border-radius: 10px;
+    font-size: .9rem;
+    border: 3px solid rgb(255, 109, 56);
+    color: black;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.button .btn{
+    background: rgb(255, 109, 56);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    color: white;
+    margin-left: 20px;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.image img{
+    height: 380px;
+}
+
+/* about */
+.about{
+    padding:0% 3%;
+    text-align: center;
+}
+.about h1{
+    color: rgb(35, 35, 35);
+    padding: 1rem 3rem ;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    word-spacing: .5rem;
+}
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+.container .box{
+    margin: 20px;
+    text-align: center;
+}
+.container .box i{
+    font-size: 4.5rem;
+    color: rgb(255, 109, 56);
+    padding: 25px 0;
+}
+.container .box h3{
+    padding: 30px 5px;
+    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(42, 42, 42);
+}
+.container .box p{
+    font-size: 16px;
+    letter-spacing: .05rem;
+    color: rgb(70, 70, 70);
+    line-height: 1.7rem;
+}
+
+
+/* projects */
+.projects{
+    padding: 25px;
+}
+.projects .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(360px ,1fr));
+    gap: 1.5rem;
+}
+.projects .container .dabba{
+    text-align: center;
+    border: 2px solid #e2e2e2;
+    border-radius: 1rem;
+    overflow: hidden;
+} 
+.container .dabba .image{
+    height: 360;
+    overflow: hidden;
+    width: 100%;
+}
+.container .dabba .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.container .dabba:hover .image img {
+    transform: scale(1.1);
+}
+.container .dabba .content{
+    padding: 25px;
+}
+.container .dabba .content .language{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.language h3{
+    color: blue;
+    font-size: 17px;
+}
+.language .btn{
+    background: rgb(255, 109, 56);
+    padding: 9px 18px;
+    border: none;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: white;
+}
+.container .dabba .content .about{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.dabba .content .about h2{
+    color: rgba(37, 0, 96, 0.832);
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.dabba .content .about p{
+    padding-top: 15px;
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    line-height: 1.4rem;
+}
+.projects .more{
+    padding: 50px;
+    text-align: center;
+}
+.projects .more h4{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(73, 0, 73);
+    text-decoration: underline;
+    word-spacing: .2rem;
+}
+.orange{
+    background: rgb(255, 109, 56);
+    height: 22rem; 
+    padding: 30px;
+    border-radius: 20px;
+}
+.orange .search{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.orange .search input{
+    border: none;
+    padding: 7px 15px;
+    background: rgb(255, 109, 56);
+    font-size: 22px;
+    width: 180px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+.orange .search i{
+    font-size: 20px;
+}
+.orange p{
+    font-size: 20px;
+    letter-spacing: .16rem;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+
