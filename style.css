@@ -268,4 +268,61 @@ section{
     margin-bottom: 15px;
 }
 
+/* about section */
+.About{
+    padding: 0;
+    background: #232323;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.About .links{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 15%;
+    padding-bottom: 3%;
+}
+.About .links .link{
+    display: flex;
+    flex-direction: column;
+}
+.About .links .link h2{
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    color: #ffffff;
+}
+.About .links .link a{
+    padding: 5px;
+    text-transform: capitalize;
+    color: #d1d1d1;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer{
+    padding: 0;
+    background: #232323;
+}
+.footer .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 12%;
+    padding-bottom: 1%;
+}
+.footer .content .copy p{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+.footer .content .copy i{
+    font-size: 12px;
+}
+.footer .content .icons i{
+    font-size: 25px;
+    color: #e2e2e2;
+    padding: 0 25px;
+}
 
